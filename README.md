@@ -1,13 +1,13 @@
-#ŠT—v
+# ŠT—v
 ffmpeg ‚Ì concat ƒRƒ}ƒ“ƒh‚É‚æ‚é“®‰æŒ‹‡‚ðŠÈ’P‚És‚¤‚½‚ß‚Ì windows powershell ‚ÌƒRƒ}ƒ“ƒhƒŒƒbƒg‚Å‚·B
 
-#Žg‚¢•û
-##ffmpeg‚ÌƒCƒ“ƒXƒg[ƒ‹
+# Žg‚¢•û
+## ffmpeg‚ÌƒCƒ“ƒXƒg[ƒ‹
 ffmpeg‚ðƒCƒ“ƒXƒg[ƒ‹‚µ‚ÄCpowershell‚ÅŽg‚¦‚éó‘Ô‚É‚µ‚Ä‚­‚¾‚³‚¢B
 
 https://ffmpeg.org/
 
-##ƒtƒ@ƒCƒ‹‚ÌƒCƒ“ƒ|[ƒg
+## ƒtƒ@ƒCƒ‹‚ÌƒCƒ“ƒ|[ƒg
 ƒRƒ}ƒ“ƒh‚ðŽÀs‚·‚é‚É‚ÍCpsm1 ƒtƒ@ƒCƒ‹‚ðpowershell‚ÉƒCƒ“ƒ|[ƒg‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
 
 ‚»‚Ìê‚ÅŽŽ—p‚Ì‚Ý‚Ìê‡‚Í Import-Module ƒRƒ}ƒ“ƒh‚ð—˜—p‚µ‚Ü‚·B
@@ -28,15 +28,15 @@ PSModulePath”z‰º‚ÉA
 
 ‚±‚ê‚ÅA‹N“®Žž‚ÉŽ©“®ƒCƒ“ƒ|[ƒg‚³‚ê‚Ü‚·B
 
-##ƒRƒ}ƒ“ƒh‚ÌŽÀs
-###“®‰æƒtƒ@ƒCƒ‹‚Ì—pˆÓ
+## ƒRƒ}ƒ“ƒh‚ÌŽÀs
+### “®‰æƒtƒ@ƒCƒ‹‚Ì—pˆÓ
 Œ‹‡‚·‚é“®‰æƒtƒ@ƒCƒ‹‚ð—pˆÓ‚µ‚Ä‚­‚¾‚³‚¢B
 
 ‚±‚ÌŽžƒtƒ@ƒCƒ‹–¼‚ÍA`<“®‰æ–¼><Œ‹‡Žq><“Y‚¦Žš>.<Šg’£Žq>` ‚Æ‚µ‚Ä‚­‚¾‚³‚¢B
 
 `hoge-1.mp4 hoge-2.mp4 hoge-3.mp4`‚Æ‚¢‚Á‚½Œ`‚Å‚·B
 
-###ƒRƒ}ƒ“ƒhŽÀs
+### ƒRƒ}ƒ“ƒhŽÀs
 catmovƒRƒ}ƒ“ƒh‚ðŽÀs‚µ‚Ü‚·B
 
 `hoge-1.mp4 hoge-2.mp4 hoge-3.mp4`‚ðŒ‹‡‚·‚éƒRƒ}ƒ“ƒh‚ÍA
@@ -53,7 +53,7 @@ sepƒIƒvƒVƒ‡ƒ“‚Å<Œ‹‡Žq>‚ðŽw’è‚µ‚Ü‚·B–¢Žw’è‚Ìê‡A<Œ‹‡Žq>‚Í–³‚µ‚Æ‚Ý‚È‚µ‚Ü‚·B
 
 ‘SƒIƒvƒVƒ‡ƒ“‚É‚Â‚¢‚Ä‚ÍŽŸÍ‚Å‘‚«‚Ü‚·B
 
-##ƒIƒvƒVƒ‡ƒ“
+## ƒIƒvƒVƒ‡ƒ“
 
 |ƒIƒvƒVƒ‡ƒ“–¼|‹Lq—á|ˆÓ–¡|ƒfƒtƒHƒ‹ƒg|
 |:---:|:---:|:---:|:---:|
@@ -65,7 +65,7 @@ sepƒIƒvƒVƒ‡ƒ“‚Å<Œ‹‡Žq>‚ðŽw’è‚µ‚Ü‚·B–¢Žw’è‚Ìê‡A<Œ‹‡Žq>‚Í–³‚µ‚Æ‚Ý‚È‚µ‚Ü‚·B
 |copy|“®‰æ‚ðÄƒGƒ“ƒR[ƒh‚µ‚È‚¢|-copy |False|
 |alp|“Y‚¦Žš‚ÉƒAƒ‹ƒtƒ@ƒxƒbƒg‚ðŽg—p|-alp |False(”Žš)|
 
-###ŽÀs—á
+### ŽÀs—á
 ƒtƒHƒ‹ƒ_‚É
 
 `hoge_A.avi hoge_B.avi hoge_C.avi hoge_D.avi hoge_E.avi`
