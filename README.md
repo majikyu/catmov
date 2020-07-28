@@ -13,7 +13,7 @@ https://ffmpeg.org/
 ‚»‚Ìê‚ÅŽŽ—p‚Ì‚Ý‚Ìê‡‚Í Import-Module ƒRƒ}ƒ“ƒh‚ð—˜—p‚µ‚Ü‚·B
 
 ```
-Import-Module ./movcat.psm1
+Import-Module ./catmov.psm1
 ```
 
 powershell ‹N“®Žž‚É–ˆ‰ñƒCƒ“ƒ|[ƒg‚ðs‚¤ê‡‚ÍCŠÂ‹«•Ï”‚Ì PSModulePath ‰º‚Éƒtƒ@ƒCƒ‹‚ð’u‚«‚Ü‚·B
@@ -21,7 +21,7 @@ powershell ‹N“®Žž‚É–ˆ‰ñƒCƒ“ƒ|[ƒg‚ðs‚¤ê‡‚ÍCŠÂ‹«•Ï”‚Ì PSModulePath ‰º‚Éƒtƒ@ƒ
 PSModulePath”z‰º‚ÉA
 
 ```
-(PSModulePath)/movcat/movcat.psm1
+(PSModulePath)/catmov/catmov.psm1
 ```
 
 ‚Æ‚¢‚¤Œ`‚Å•Û‘¶‚µ‚Ä‚­‚¾‚³‚¢B
