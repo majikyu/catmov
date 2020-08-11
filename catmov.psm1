@@ -1,4 +1,4 @@
-function catmov([parameter(mandatory=$true)][string]$movname, $out = $movname, $start, $end, $sep, $ext = "mp4", [switch]$copy, [switch]$alp){
+function catmov([parameter(mandatory=$true)][string]$movname, $out = $movname, $start, $end, $sep, $ext = "mp4", [switch]$copy, [switch]$alp, [int]$dig = 1){
 
 #####error check 1
 
@@ -38,6 +38,11 @@ function catmov([parameter(mandatory=$true)][string]$movname, $out = $movname, $
 			}
 		}
 	}
+	
+	if($alp -and $dig -ne 1){
+		echo '%%Error%%  -alp and -dig cannot use simultaneously'
+		return
+	}
 
 #####prepare variables
 
@@ -56,12 +61,18 @@ function catmov([parameter(mandatory=$true)][string]$movname, $out = $movname, $
 
 	$exist
 	$filenum=0
+	$filepath
 	Do
 	{
 	if($alp){$filepath = $movname + $sep + [char]$index + "." + $ext}
-	else{$filepath = $movname + $sep + $index + "." + $ext}
+	else{
+		$digind = "{0:D" + $dig + "}"
+		$strindex = $digind -f $index
+		$filepath = $movname + $sep + $strindex + "." + $ext
+		}
 	$exist = Test-Path $filepath
-		if($exist){$filenum++
+		if($exist){
+		$filenum++
 		$index++
 		}		
 	}
@@ -79,7 +90,11 @@ function catmov([parameter(mandatory=$true)][string]$movname, $out = $movname, $
 
 	for($i=0;$i -lt $filenum;$i++){
 	if($alp){$line = "file " + $movname + $sep + [char]$index + "." + $ext}
-	else{$line = "file " + $movname + $sep + $index + "." + $ext}
+	else{
+		$digind = "{0:D" + $dig + "}"
+		$strindex = $digind -f $index
+		$line = "file " + $movname + $sep + $strindex + "." + $ext
+		}
 	$line | Out-File .catmanifest -encoding default -append
 	$index++
 	}

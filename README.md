@@ -55,7 +55,7 @@ sepƒIƒvƒVƒ‡ƒ“‚Å<Œ‹‡Žq>‚ðŽw’è‚µ‚Ü‚·B–¢Žw’è‚Ìê‡A<Œ‹‡Žq>‚Í–³‚µ‚Æ‚Ý‚È‚µ‚Ü‚·B
 
 ## ƒIƒvƒVƒ‡ƒ“
 
-|ƒIƒvƒVƒ‡ƒ“–¼|‹Lq—á|ˆÓ–¡|ƒfƒtƒHƒ‹ƒg|
+|ƒIƒvƒVƒ‡ƒ“–¼|ˆÓ–¡|Žg—p—á|ƒfƒtƒHƒ‹ƒg|
 |:---:|:---:|:---:|:---:|
 |out|o—Íƒtƒ@ƒCƒ‹–¼‚ÌŽw’è|-out hoge|<“®‰æ–¼>.<Šg’£Žq>|
 |start|æ“ª‚É‚È‚é“ü—Í“®‰æ‚Ì“Y‚¦Žš|-start 3|1|
@@ -64,6 +64,7 @@ sepƒIƒvƒVƒ‡ƒ“‚Å<Œ‹‡Žq>‚ðŽw’è‚µ‚Ü‚·B–¢Žw’è‚Ìê‡A<Œ‹‡Žq>‚Í–³‚µ‚Æ‚Ý‚È‚µ‚Ü‚·B
 |ext|“®‰æ‚ÌŠg’£ŽqŽw’è|-ext avi|mp4|
 |copy|“®‰æ‚ðÄƒGƒ“ƒR[ƒh‚µ‚È‚¢|-copy |False|
 |alp|“Y‚¦Žš‚ÉƒAƒ‹ƒtƒ@ƒxƒbƒg‚ðŽg—p|-alp |False(”Žš)|
+|dig|“Y‚¦Žš‚ÌŒ…”(”Žš‚Ì‚Ý)|-dig 2|1|
 
 ### ŽÀs—á
 ƒtƒHƒ‹ƒ_‚É
