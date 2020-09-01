@@ -72,6 +72,7 @@ function catmov([parameter(mandatory=$true)][string]$movname, $out = $movname, $
 		}
 	$exist = Test-Path $filepath
 		if($exist){
+		echo "Found part fileÅy$filepathÅz"
 		$filenum++
 		$index++
 		}		
@@ -104,10 +105,11 @@ function catmov([parameter(mandatory=$true)][string]$movname, $out = $movname, $
 #####execute ffmpeg concat
 
 	$outfilename = $out + "." + $ext
+	echo "`n`n   Åy Cat $filenum videos =>=>=> $outfilename Åz`n`n"
 	if($copy){
-		ffmpeg -f concat -i .catmanifest -c copy $outfilename
+		ffmpeg -f concat -i .catmanifest -c copy -v quiet -stats $outfilename
 	}else{
-		ffmpeg -f concat -i .catmanifest $outfilename
+		ffmpeg -f concat -i .catmanifest -v quiet -stats $outfilename
 	}
 	rm .catmanifest -Force
 	
